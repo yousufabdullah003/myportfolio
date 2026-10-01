@@ -31,7 +31,7 @@ const translations = {
         nav_skills: "Ujuzi",
         nav_projects: "Kazi zangu",
         nav_contact: "Wasiliana nami",
-        hero_eyebrow: "Tovuti na Bidhaa za Kidijitali",
+        hero_eyebrow: "Kubuni uzoefu wa kidigitali",
         hero_title: "Tovuti na <span>Bidhaa za Kidijitali</span>",
         hero_desc: "Habari! Jina langu ni Yousuf Abdullah, Ninatengeneza tovuti na ubunifu wa kidijitali kama logo, posters na flyers.",
         btn_work: "Tazama kazi zangu",
