@@ -5,11 +5,10 @@ const translations = {
         nav_skills: "Skills",
         nav_projects: "Projects",
         nav_contact: "Let's talk",
-        hero_eyebrow: "Website & Digital Products",
+        hero_eyebrow: "Designing Digital Experiences",
         hero_title: "Websites & <span>Digital Products</span>",
         hero_desc: "Hello! My name is Yousuf Abdullah, I create websites and digital designs such as logos, posters and flyers.",
         btn_work: "View my work",
-        btn_contact: "Contact me",
         btn_contact: "Contact me",
         about_eyebrow: "About me",
         about_title: "Who am I?",
@@ -36,7 +35,6 @@ const translations = {
         hero_title: "Tovuti na <span>Bidhaa za Kidijitali</span>",
         hero_desc: "Habari! Jina langu ni Yousuf Abdullah, Ninatengeneza tovuti na ubunifu wa kidijitali kama logo, posters na flyers.",
         btn_work: "Tazama kazi zangu",
-        btn_contact: "Wasiliana nami",
         btn_contact: "Wasiliana nami",
         about_eyebrow: "Kuhusu mimi",
         about_title: "Mimi ni nani?",
@@ -82,3 +80,33 @@ langBtn.addEventListener("click", () => {
 
 // Ukurasa unapofunguka: tumia lugha iliyohifadhiwa, vinginevyo Kiingereza
 setLanguage(localStorage.getItem("lang") || "en");
+
+// ============ MENYU YA SIMU ============
+const menuBtn = document.getElementById("menuBtn");
+const nav = document.getElementById("nav");
+
+function closeMenu() {
+    nav.classList.remove("open");
+    menuBtn.classList.remove("open");
+    menuBtn.setAttribute("aria-expanded", "false");
+}
+
+menuBtn.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("open");
+    menuBtn.classList.toggle("open", isOpen);
+    menuBtn.setAttribute("aria-expanded", isOpen);
+});
+
+nav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closeMenu);
+});
+
+document.addEventListener("click", (e) => {
+    if (!nav.contains(e.target) && !menuBtn.contains(e.target)) {
+        closeMenu();
+    }
+});
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeMenu();
+});

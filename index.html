@@ -3,33 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yousuf Abdullah</title>
+    <title>Yousuf Abdullah | Website & Digital Products</title>
+<meta name="description" content="Yousuf Abdullah, creative designer. Websites, logos, posters and flyers.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="site-header">
-        <div class="container nav-wrap">
-            <a href="#" class="logo">YA<span>.</span></a>
-         <nav>
+    <div class="container nav-wrap">
+        <a href="#" class="logo">YAZ<span>.</span></a>
+
+        <nav class="nav" id="nav">
             <ul class="nav-links">
-             <li><a href="#about" data-i18n="nav_about">About</a></li>
-             <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
-             <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
-             <li><a href="#contact" data-i18n="nav_contact">Let's talk</a></li>
+                <li><a href="#about" data-i18n="nav_about">About</a></li>
+                <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+                <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+                <!-- inaonekana kwenye simu ndogo tu -->
+                <li class="nav-cta-mobile">
+                    <a href="#contact" class="btn btn-primary" data-i18n="nav_contact">Let's talk</a>
+                </li>
             </ul>
         </nav>
-         <button class="lang-btn" id="langBtn" aria-label="Change language">SW</button>
+
+        <div class="nav-actions">
+            <a href="#contact" class="btn btn-primary nav-cta" data-i18n="nav_contact">Let's talk</a>
+            <button class="lang-btn" id="langBtn" aria-label="Change language">SW</button>
+            <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-    </header>
+    </div>
+</header>
     <section class="hero">
         <div class="container hero-grid">
             <div class="hero-text">
-    <p class="eyebrow" data-i18n="hero_eyebrow">Website & Digital Products</p>
+    <p class="eyebrow" data-i18n="hero_eyebrow">Designing Digital Experiences</p>
     <h1 data-i18n="hero_title">Websites & <span>Digital Products</span></h1>
     <p class="hero-desc" data-i18n="hero_desc">
-        Hello! My name is Yousuf Abdullah,I create websites and digital designs such as logos, posters and flyers.
+        Hello! My name is Yousuf Abdullah, I create websites and digital designs such as logos, posters and flyers.
     </p>
     <div class="hero-buttons">
         <a href="#projects" class="btn btn-primary" data-i18n="btn_work">View my work</a>
@@ -68,7 +82,6 @@
         </div>
     </div>
 </section>
-
 <!-- ============ SKILLS ============ -->
 <section class="section" id="skills">
     <div class="container">
@@ -95,6 +108,5 @@
     </div>
 </section>
         <script src="script.js"></script>
-</body>
 </body>
 </html>
