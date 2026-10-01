@@ -12,25 +12,30 @@
     <header class="site-header">
         <div class="container nav-wrap">
             <a href="#" class="logo">YA<span>.</span></a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Archive</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Let's talk</a></li>
-                </ul>
-            </nav>
+         <nav>
+            <ul class="nav-links">
+             <li><a href="#about" data-i18n="nav_about">About</a></li>
+             <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+             <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+             <li><a href="#contact" data-i18n="nav_contact">Let's talk</a></li>
+            </ul>
+        </nav>
+         <button class="lang-btn" id="langBtn" aria-label="Change language">SW</button>
         </div>
     </header>
     <section class="hero">
         <div class="container hero-grid">
             <div class="hero-text">
-                <p class="eyebrow">Website & Digital Products</p>
-                <h1>Websites & <span>Digital Products</span></h1>
-                <p class="hero-desc">
-                    Ninafanya aina mbalimbali ya ubunifu kama vile logo,posters na flyers
-                </p>
-            </div>
+    <p class="eyebrow" data-i18n="hero_eyebrow">Website & Digital Products</p>
+    <h1 data-i18n="hero_title">Websites & <span>Digital Products</span></h1>
+    <p class="hero-desc" data-i18n="hero_desc">
+        Hello! My name is Yousuf Abdullah,I create websites and digital designs such as logos, posters and flyers.
+    </p>
+    <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary" data-i18n="btn_work">View my work</a>
+        <a href="#contact" class="btn btn-outline" data-i18n="btn_contact">Contact me</a>
+    </div>
+</div>
             <div class="hero-image">
                 <div class="image-frame">
                     <img src="images/yousuf.jpg" alt="Picha ya Yousuf Abdullah">
@@ -38,5 +43,58 @@
             </div>
         </div>
     </section>
+    <!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+    <div class="container">
+        <p class="eyebrow" data-i18n="about_eyebrow">About me</p>
+        <h2 class="section-title" data-i18n="about_title">Who am I?</h2>
+        <p class="about-text" data-i18n="about_text">
+            I'm Yousuf Abdullah, a student and creative designer. I build modern websites and design logos, posters and flyers that help people and businesses stand out.
+        </p>
+
+        <div class="stats">
+            <div class="stat">
+                <h3>20+</h3>
+                <p data-i18n="stat_projects">Projects</p>
+            </div>
+            <div class="stat">
+                <h3>3</h3>
+                <p data-i18n="stat_services">Services</p>
+            </div>
+            <div class="stat">
+                <h3>100%</h3>
+                <p data-i18n="stat_passion">Passion</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section" id="skills">
+    <div class="container">
+        <p class="eyebrow" data-i18n="skills_eyebrow">What I do</p>
+        <h2 class="section-title" data-i18n="skills_title">My Skills</h2>
+
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">🌐</div>
+                <h3 data-i18n="skill1_title">Web Design</h3>
+                <p data-i18n="skill1_desc">Modern, fast and mobile-friendly websites.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🎨</div>
+                <h3 data-i18n="skill2_title">Logo Design</h3>
+                <p data-i18n="skill2_desc">Memorable logos that represent your brand.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🖼️</div>
+                <h3 data-i18n="skill3_title">Posters & Flyers</h3>
+                <p data-i18n="skill3_desc">Eye-catching designs for events and promotions.</p>
+            </div>
+        </div>
+    </div>
+</section>
+        <script src="script.js"></script>
+</body>
 </body>
 </html>
